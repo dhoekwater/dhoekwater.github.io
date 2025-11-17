@@ -123,7 +123,7 @@ To access the collections, you can use the `site.COLLECTION_NAME` variable in yo
 
 ## Adding a new publication
 
-To add publications create a new entry in the [\_bibliography/papers.bib](_bibliography/papers.bib) file. You can find the BibTeX entry of a publication in Google Scholar by clicking on the quotation marks below the publication title, then clicking on "BibTeX", or also in the conference page itself. By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
+To add publications create a new entry in the \_bibliography/papers.bib file. You can find the BibTeX entry of a publication in Google Scholar by clicking on the quotation marks below the publication title, then clicking on "BibTeX", or also in the conference page itself. By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
 
 You can add extra information to a publication, like a PDF file in the `assets/pdfs/` directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `annotation`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
@@ -376,7 +376,6 @@ GitHub restricts the default `GITHUB_TOKEN` from triggering other workflows when
 ### How to set up the PAT
 
 1. **Create a Personal Access Token**
-
    - Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens).
    - Click "Generate new token" (classic or fine-grained).
    - Grant at least the following permissions:
@@ -384,7 +383,6 @@ GitHub restricts the default `GITHUB_TOKEN` from triggering other workflows when
    - Save the token somewhere safe.
 
 2. **Add the PAT as a repository secret**
-
    - Go to your repository on GitHub.
    - Navigate to `Settings` > `Secrets and variables` > `Actions` > `New repository secret`.
    - Name the secret `PAT` (must match the name used in the workflow).
